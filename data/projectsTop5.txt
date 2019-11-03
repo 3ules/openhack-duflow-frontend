@@ -1,0 +1,126 @@
+################################################################################################
+## part 1
+
+*epi_watsup 
+	Access to Drinking Water  <------ not included in ts
+	*epi_ehwater Water and Sanitation 74 <------ not included in ts
+	2.8 Health 
+
+
+*wdi_litrad 
+	Literacy rate, adult total (% of people ages 15 and above) <------ not included in ts
+	2.4 Education	
+
+
+1.
+*epi_watsup 
+	Access to Drinking Water  <------ not included in ts
+	*epi_ehwater Water and Sanitation 74 <------ not included in ts
+	2.8 Health 
+## 
+who_sanittot 
+	Total population using basic sanitation services (%)	 <------- DONE
+	2.8 Health 
+	2.5 Energy and Infrastructure
+
+
+wdi_lifexpf 
+	Life expectancy at birth, female (years)	
+	2.7 Gender Equality
+
+
+*bl_asyf 
+	Average Schooling Years, Female	 <--------- DOING, oh no, not present in oecd
+	2.4 Education
+bl_asymf 
+	Average Schooling Years, Female and Male <------- DOING instead
+	2.4 Education	
+
+	mapping: education total_oecd	
+
+	
+wdi_acel 
+	Access to electricity (% of population)
+	2.5 Energy and Infrastructure	
+
+wdi_internet 
+	Individuals using the Internet (% of population)	
+	2.5 Energy and Infrastructure
+
+
+
+################################################################################################
+## part 2 :
+
+filters: recipients, sector
+oecd (aid (donor, recipient, sector (nested), amount)): https://stats.oecd.org/Index.aspx?DataSetCode=CRS1
+
+Afghanistan
+275.900	415.822	271.471	307.709	425.743	292.603	278.219	173.841	252.665	82.074
+
+################################################################################################
+## python
+
+ts = .../some_inputCSVFile/...
+r = pandas.read_csv(ts)
+
+>>> print(r[['bl_asyf', 'wdi_acel', 'wdi_internet', 'who_sanittot', 'wdi_lifexpf', 'cname']].dropna())
+		59     0.999741   23.000000      1.224148          28.0       59.730  Afghanistan <----
+		64     1.159922   42.700000      4.000000          34.0       62.476  Afghanistan
+		14659  0.817631   56.418056      1.048598          46.0       63.250        Yemen
+		14664  1.313680   63.134281     12.350000          53.0       64.895        Yemen
+		14873  4.811833   16.700000      0.191072          26.0       46.400       Zambia
+		14878  5.371965   21.277885      2.851752          28.0       51.237       Zambia
+		14883  5.836836   22.000000     10.000000          29.0       58.520       Zambia
+
+################################################################################################
+
+>>> pri[['bl_asyf', 'wdi_acel', 'wdi_internet', 'who_sanittot', 'wdi_lifexpf', 'cname', 'year']].dropna())
+        bl_asyf    wdi_acel  wdi_internet  who_sanittot  wdi_lifexpf        cname  year
+	59     0.999741   23.000000      1.224148          28.0       59.730  Afghanistan  2005
+	64     1.159922   42.700000      4.000000          34.0       62.476  Afghanistan  2010
+	127    8.873312  100.000000      0.114097          88.0       76.953      Albania  2000
+	132    9.368079  100.000000      6.043891          92.0       78.170      Albania  2005
+	137    9.570916  100.000000     45.000000          96.0       79.209      Albania  2010
+	...         ...         ...           ...           ...          ...          ...   ...
+	14659  0.817631   56.418056      1.048598          46.0       63.250        Yemen  2005
+	14664  1.313680   63.134281     12.350000          53.0       64.895        Yemen  2010
+	14873  4.811833   16.700000      0.191072          26.0       46.400       Zambia  2000
+	14878  5.371965   21.277885      2.851752          28.0       51.237       Zambia  2005
+	14883  5.836836   22.000000     10.000000          29.0       58.520       Zambia  2010
+
+[408 rows x 7 columns]
+
+################################################################################################
+
+>>> print(r[['wdi_lifexpf', 'cname', 'year']].dropna())
+       wdi_lifexpf             cname  year
+	14          33.133       Afghanistan  1960
+	15          33.586       Afghanistan  1961
+	16          34.030       Afghanistan  1962
+	17          34.469       Afghanistan  1963
+	18          34.904       Afghanistan  1964
+	...            ...               ...   ...
+	15204       50.397  Pakistan (-1970)  1966
+	15205       51.077  Pakistan (-1970)  1967
+	15206       51.721  Pakistan (-1970)  1968
+	15207       52.331  Pakistan (-1970)  1969
+	15208       52.910  Pakistan (-1970)  1970
+
+[8851 rows x 3 columns]
+
+################################################################################################
+
+
+
+
+
+
+
+
+	######
+	bl_asymf 
+	Average Schooling Years, Female and Male
+	2.4 Education	
+
+	education total_oecd

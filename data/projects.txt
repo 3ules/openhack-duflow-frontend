@@ -1,0 +1,116 @@
+
+
+## https://www.qogdata.pol.gu.se/data/qog_bas_jan19.pdf
+#######################################################################
+
+
+2.4 Education					12/13					
+wdi_litrad Literacy rate, adult total (% of people ages 15 and above) 168 <--------------------------------------
+
+2.5 Energy and Infrastructure	13/14
+wdi_acel Access to electricity (% of population) 	148					<--------------------------------------
+wdi_internet Individuals using the Internet (% of population) 	167  <--------------------------------------
+
+
+2.7 Gender Equality 			15/16
+bl_asyf Average Schooling Years, Female 			36		<--------------------------------------
+
+
+2.8 Health 						16/17
+epi_watsup Access to Drinking Water 				75  <--------------------------------------
+
+
+2.10 Judicial 					18/19
+bti_foe Freedom of Expression 						44
+ccp_childwrk Limits on Child Work in Constitution 	51
+ciri_tort Torture 56
+
+
+2.17 Private economy 			26/27
+shec_se Level of the shadow economy 				137
+wvs_satfin Satisfaction with financial situation of household 189
+
+2.18 Religion					27/28
+ciri_relfre_new Freedom of Religion (New) 			55
+wvs_relacc The only acceptable religion is my religion 188
+
+2.19 Welfare					29/30
+sc_sickcov Sickness coverage 						130
+fh_feb Freedom of Expression and Belief 			84
+
+
+
+
+#######################################################################
+## sida general focuses
+
+## https://www.sida.se/English/how-we-work/our-fields-of-work/
+
+Development requires efforts on many levels. Sida therefore supports interventions that encompass several areas:
+
+Democracy, human rights and freedom of expression
+Gender equality
+Environment and climate
+Health
+Market development
+Agriculture and food security
+Education
+Sustainable societal development
+Conflict, peace and security
+Humanitarian aid
+
+
+Health
+Gender equality
+Education
+
+
+
+#######################################################################
+## corruption, "sectors"
+
+gcb_orcag Feel personally obliged to report corruption?: agree (% respondents) 90
+gcb_pcbmost Corruption Perception-Business Executives: Most (% respondents) 91
+gcb_pcjmost Corruption Perception-Judges: Most (% respondents) 91
+gcb_pclgcmost Corruption Perception-Local Gov Council: Most (% respondents) 91
+gcb_pclmost Corruption Perception-Legislature: Most (% respondents) 92
+gcb_pcori Corruption Perception Change: Increase (% respondents) 92
+gcb_pcpmost Corruption Perception-Head of State: Most (% respondents) 92
+gcb_pcpolmost Corruption Perception-Police: Most (% respondents) 92
+gcb_pcrmost Corruption Perception-Religious Leaders: Most (% respondents) 93
+gcb_pctaxmost Corruption Perception-Tax officers: Most (% respondents) 93
+
+
+#######################################################################
+## corruption projects, sorted away
+
+2.1 Quality of Government		8/9
+bci_bci The Bayesian Corruption Indicator 			32	
+
+	(In addition, in contrast to the WGI or CPI, the underlying source
+	data are entered without any ex-ante imputations, averaging or other manipulations)
+
+gcb_br Total bribery rate, total population 90		90	
+
+gcb_orcag Feel personally obliged to report corruption?: agree (% respondents) 90
+
+
+
+#######################################################################
+##(Corruption)
+
+2.1 Quality of Government
+
+Judical
+gcb_pcjmost Corruption Perception-Judges: Most (% respondents) 91
+gcb_pcpolmost Corruption Perception-Police: Most (% respondents) 92
+
+
+#######################################################################
+## Judical
+
+*ciri_formov Freedom of Foreign Movement 			54 <------- take away/extra
+
+
+*2.13 Migration					21/22
+*ciri_formov Freedom of Foreign Movement 			54
