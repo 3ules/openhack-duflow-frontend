@@ -1,3 +1,15 @@
+
+################################################################################################
+## map and extract:
+
+qog data (cvs: numbers, pdf: goal.(id, name)): https://qog.pol.gu.se/data/datadownloads/qogbasicdata
+oecd (aid (donor, recipient, sector (nested), amount)): https://stats.oecd.org/Index.aspx?DataSetCode=CRS1
+
+
+update: using all donors for demo because of sparse data
+update: using mockop for the time series data even though we have extracted it an put on github, since we have not yet chosen a 
+heuristic for how to deal with the sparse data.
+
 ################################################################################################
 ## part 1
 
@@ -46,7 +58,6 @@ wdi_acel
 wdi_internet 
 	Individuals using the Internet (% of population)	
 	2.5 Energy and Infrastructure
-
 
 
 ################################################################################################
